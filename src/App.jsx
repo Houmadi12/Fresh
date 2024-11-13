@@ -1,10 +1,17 @@
+import Confiance from "./composants/sectionProducteurs/Confiance"
+import Producteurs from "./composants/sectionProducteurs/Producteurs"
+import SectionNous from "./composants/sectionProducteurs/SectionNous"
 
 function App() {
   return (
-    <h1 className="text-3xl text-center font-bold underline">
-    Hello world!
-    </h1>
+   <div>
     
+    <div>
+      <Producteurs />
+      <Confiance />
+      <SectionNous />
+    </div>
+   </div>
   )
 }
 
