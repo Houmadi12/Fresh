@@ -1,10 +1,11 @@
+import NosProduits from './composants/Produits/NosProduits';
 
 function App() {
   return (
-   <div>
-    
-   </div>
-  )
+    <div>
+      <NosProduits />
+    </div>
+  );
 }
 
-export default App
+export default App;
