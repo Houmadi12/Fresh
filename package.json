@@ -10,7 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "fresh": "file:",
+    "flowbite": "^2.5.2",
+    "fresh": "^0.5.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
