@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .bg-img-bnv {
+        background-image: url(assets/headerbg.68e37491cb443024ae60.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .bg-img-blog {
+        background-image: url(assets/BgBlog.56328a0729f45c28861a.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}

@@ -9,7 +9,7 @@ export default function Nav(props) {
         setModalopen((prev)=> { return !prev})};
     return (
         <div>
-            <nav class="bg-gray-800">
+            <nav class="">
                 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                     <div class="relative flex h-16 items-center justify-between">
                         <div class="absolute inset-y-0 left-0 flex items-center md:hidden px-8 pt-5">
@@ -28,7 +28,7 @@ export default function Nav(props) {
                                 </svg>
                             </button>
                         </div>
-                        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start bg-red-500">
+                        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start ">
                             <div class="hidden flex-1 md:flex space-x-4 flex justify-between items-center px-12 pt-5">
                                 <Link to="/"> <img src={Logo}></img></Link>   
                                 <nav class="flex space-x-4">
@@ -50,8 +50,10 @@ export default function Nav(props) {
                 {Modalopen && (
                 <div class="md:hidden container pl-14" id="mobile-menu">
                     <div class="space-y-1 px-2 pb-3 pt-2 bg-white container">
+
                         <nav class="flex flex-col pb-2">
-                            <a href="/nos-producteurs" class="text-black hover:text-lime-500 transition">Nos Produits</a>
+                            <Link to="/" class="text-black hover:text-lime-500 transition">Accueil</Link>
+                            <Link to="/produit" class="text-black hover:text-lime-500 transition">Nos Produits</Link>
                             <a href="#about-us" class="text-black hover:text-lime-500 transition">À Propos</a>
                             <a href="#contact" class="text-black hover:text-lime-500 transition">Contact</a>
                             <a href="/login" class="text-black hover:text-lime-500 transition">Compte</a>

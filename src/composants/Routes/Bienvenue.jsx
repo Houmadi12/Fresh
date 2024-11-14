@@ -3,7 +3,7 @@ import Card from "../../composants/Card/Card";
 import Graine from "../../composants/Graine/Graine";
 
 import Footer from "../../composants/Footer"
-import Nav from "../../composants/Nav"
+import AcceuilBVN from "../AcceuilBVN";
 
 
 import Galerie from "../../composants/composant-galerie/Galerie"
@@ -18,7 +18,7 @@ function Bienvenue() {
   return (
     <div>
       <div>
-        <Nav produit="Nos Produits" propos="A Propos" contact=" Contact" compte="Compte" blog="Blog" />
+        <AcceuilBVN/>
       </div>
 
 

@@ -1,4 +1,5 @@
 
+
 import Bienvenue from "./composants/Routes/Bienvenue";
 import Blog from "./composants/Routes/Blog";
 import React from 'react';
@@ -19,8 +20,10 @@ function App() {
 
     </Routes>
   </Router>
-  );
+  
 
+   
+  )
 }
 
 
