@@ -55,7 +55,7 @@ export default function Nav(props) {
                             <a href="#about-us" class="text-black hover:text-lime-500 transition">À Propos</a>
                             <a href="#contact" class="text-black hover:text-lime-500 transition">Contact</a>
                             <a href="/login" class="text-black hover:text-lime-500 transition">Compte</a>
-                            <a href="/blog" class="text-black hover:text-lime-500 transition">Blog</a>
+                            <Link to="/blog" class="text-black hover:text-lime-500 transition">Blog</Link>
                         </nav>
                         <a href="/partanariat" class="bg-lime-500 text-black px-4 py-2 rounded-full shadow hover:bg-lime-500 transition ">Faire un Partenariat</a>
                     </div>
