@@ -1,6 +1,7 @@
 import CarteBnv from "./SectionBVN/CarteBnv";
 import SectionBvn from "./SectionBVN/SectionBvn";
 import { BsCircleFill } from "react-icons/bs";
+import Image2 from "../assets/propose1.46578ef289f25658026b.png"
 
 export default function BlogBNV() {
     return (
@@ -32,7 +33,7 @@ export default function BlogBNV() {
                     </p>
                     span= <a className="text-blue-600 text-md">Voir plus</a>
 
-                    image=<img className="w-100 h-100 object-cover" src="/src/assets/propose1.46578ef289f25658026b.png" alt="profile-picture" />
+                    image=<img className="w-100 h-100 object-cover" src={Image2} alt="profile-picture" />
                 />
             </div>
         </div>

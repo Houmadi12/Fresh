@@ -28,7 +28,7 @@ function Graine() {
         </div>
       </div>
       <div className='flex justify-end mt-10'>
-      <button class="bg-gray-100 border-2 border-black tex-center text-black text-start py-2 px-4 rounded-full w-72 shadow-lg hover:bg-lime-100">Voir les vidéos</button>
+      <button className="bg-gray-100 border-2 border-black tex-center text-black text-start py-2 px-4 rounded-full w-72 shadow-lg hover:bg-lime-100">Voir les vidéos</button>
       </div>
     </div>
   );
