@@ -3,7 +3,10 @@ import BlogBNV from "./composants/BlogBNV"
 
 function App() {
   return (
+    <>
     <AcceuilBVN />
+    <BlogBNV />
+    </>
   )
 }
 
