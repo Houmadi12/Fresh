@@ -32,10 +32,10 @@ export default function Nav(props) {
                             <div class="hidden flex-1 md:flex space-x-4 flex justify-between items-center px-12 pt-5">
                                 <Link to="/"> <img src={Logo}></img></Link>   
                                 <nav class="flex space-x-4">
-                                    <a href="/nos-producteurs" class="text-black hover:text-lime-500 transition"> {props.produit} </a>
+                                    <Link to="/produit" class="text-black hover:text-lime-500 transition"> {props.produit} </Link>
                                     <a href="#about-us" class="text-black hover:text-lime-500 transition">{props.propos}</a>
                                     <a href="#contact" class="text-black hover:text-lime-500 transition">{props.contact}</a>
-                                    <a href="#contact" class="text-black hover:text-lime-500 transition">{props.producteur}</a>
+                                    <Link to="/produit" class="text-black hover:text-lime-500 transition">{props.producteur}</Link>
 
                                     <a href="/login" class="text-black hover:text-lime-500 transition">{props.compte}</a>
                                     <Link to="/blog" class="text-black hover:text-lime-500 transition">{props.blog}</Link>

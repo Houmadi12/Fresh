@@ -3,6 +3,7 @@
 
 import Footer from "../../composants/Footer"
 import Nav from "../../composants/Nav"
+import Articles from "../blog/Articles";
 import Reintegration from "../composant-galerie/Reintegration";
 
 
@@ -21,6 +22,9 @@ function Blog() {
                         Ensemble, continuons à célébrer la richesse de notre terroir, à soutenir nos producteurs locaux, et à déguster des plats savoureux qui respectent
                         <br /> notre planète. À vos fourneaux et à bientôt pour de nouvelles découvertes gourmandes !
                     </p>
+                </div>
+                <div>
+                    <Articles/>
                 </div>
                 <Reintegration />
             </div>
