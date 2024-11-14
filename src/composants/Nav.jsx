@@ -1,7 +1,9 @@
 import Logo from '../assets/logo.png'
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
-export default function Nav() {
+
+export default function Nav(props) {
     const[Modalopen,setModalopen]=useState(false)
     const ouvrirModal = (e) => {e.preventDefault()
         setModalopen((prev)=> { return !prev})};
@@ -28,13 +30,15 @@ export default function Nav() {
                         </div>
                         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start bg-red-500">
                             <div class="hidden flex-1 md:flex space-x-4 flex justify-between items-center px-12 pt-5">
-                                <img src={Logo}></img>
+                                <Link to="/"> <img src={Logo}></img></Link>   
                                 <nav class="flex space-x-4">
-                                    <a href="/nos-producteurs" class="text-black hover:text-lime-500 transition">Nos Produits</a>
-                                    <a href="#about-us" class="text-black hover:text-lime-500 transition">À Propos</a>
-                                    <a href="#contact" class="text-black hover:text-lime-500 transition">Contact</a>
-                                    <a href="/login" class="text-black hover:text-lime-500 transition">Compte</a>
-                                    <a href="/blog" class="text-black hover:text-lime-500 transition">Blog</a>
+                                    <a href="/nos-producteurs" class="text-black hover:text-lime-500 transition"> {props.produit} </a>
+                                    <a href="#about-us" class="text-black hover:text-lime-500 transition">{props.propos}</a>
+                                    <a href="#contact" class="text-black hover:text-lime-500 transition">{props.contact}</a>
+                                    <a href="#contact" class="text-black hover:text-lime-500 transition">{props.producteur}</a>
+
+                                    <a href="/login" class="text-black hover:text-lime-500 transition">{props.compte}</a>
+                                    <Link to="/blog" class="text-black hover:text-lime-500 transition">{props.blog}</Link>
                                 </nav>
                                 <a href="/partanariat" class="bg-lime-500 text-black px-4 py-2 rounded-full shadow hover:bg-lime-500 transition">Faire un Partenariat</a>
                             </div>
