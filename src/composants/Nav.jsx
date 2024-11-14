@@ -37,7 +37,7 @@ export default function Nav(props) {
                                     <a href="#contact" class="text-black hover:text-lime-500 transition">{props.contact}</a>
                                     <Link to="/produit" class="text-black hover:text-lime-500 transition">{props.producteur}</Link>
 
-                                    <a href="/login" class="text-black hover:text-lime-500 transition">{props.compte}</a>
+                                    <a href="/compte" class="text-black hover:text-lime-500 transition">{props.compte}</a>
                                     <Link to="/blog" class="text-black hover:text-lime-500 transition">{props.blog}</Link>
                                 </nav>
                                 <a href="/partanariat" class="bg-lime-500 text-black px-4 py-2 rounded-full shadow hover:bg-lime-500 transition">Faire un Partenariat</a>
