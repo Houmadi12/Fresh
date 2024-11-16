@@ -52,7 +52,7 @@ export default function Nav(props) {
                     <div className="space-y-1 px-2 pb-3 pt-2 bg-white container">
 
                         <nav className="flex flex-col pb-2">
-                            <Link to="/" class="text-black hover:text-lime-500 transition">Accueil</Link>
+                            <Link to="/" className="text-black hover:text-lime-500 transition">Accueil</Link>
                             <Link to="/produit" className="text-black hover:text-lime-500 transition">Nos Produits</Link>
                             <Link to="#about-us" className="text-black hover:text-lime-500 transition">À Propos</Link>
                             <Link to="#contact" className="text-black hover:text-lime-500 transition">Contact</Link>
