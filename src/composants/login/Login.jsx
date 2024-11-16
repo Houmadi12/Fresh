@@ -1,12 +1,14 @@
 import NavbarLogin from "../NavbarLogin/NavbarLogin";
+import { Link } from 'react-router-dom';
+
 
 export default function Login() {
   return (
-    <>
+    <div className="">
       <div>
         <NavbarLogin />
       </div>
-      <div className="flex ag  my-10 items-center  justify-evenly ">
+      <div className="flex ag  my-10 items-center  justify-evenly  ">
         <div className="  md:w-[550px] px-4  rounded-lg md:h-screen py-3">
           <h1 className="text-4xl font-bold  text-gray-900  mb-4">Connexion</h1>
           <p className=" text-gray-700 mb-6">
@@ -61,9 +63,9 @@ export default function Login() {
               </label>
             </div>
             <div className="flex items-center">
-              <a href="" className="text-gray-700 text-sm">
+              <Link to="/inscrire" className="text-gray-700 text-sm">
                 S'inscrire
-              </a>
+              </Link>
             </div>
 
             {/* Button */}
@@ -92,6 +94,6 @@ export default function Login() {
           className="rounded-lg shadow-lg hidden md:block  md:w-[550px] bg-black h-screen "
         />
       </div>
-    </>
+      </div>
   );
 }

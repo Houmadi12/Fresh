@@ -40,7 +40,7 @@ export default function Nav(props) {
                                     <a href="/compte" className="text-black hover:text-lime-500 transition">{props.compte}</a>
                                     <Link to="/blog" className="text-black hover:text-lime-500 transition">{props.blog}</Link>
                                 </nav>
-                                <a href="/partanariat" className="bg-lime-500 text-black px-4 py-2 rounded-full shadow hover:bg-lime-500 transition">Faire un Partenariat</a>
+                                <Link to="/partanariat" className="bg-lime-500 text-black px-4 py-2 rounded-full shadow hover:bg-lime-500 transition">Faire un Partenariat</Link>
                             </div>
                         </div>
 
@@ -54,9 +54,9 @@ export default function Nav(props) {
                         <nav className="flex flex-col pb-2">
                             <Link to="/" class="text-black hover:text-lime-500 transition">Accueil</Link>
                             <Link to="/produit" className="text-black hover:text-lime-500 transition">Nos Produits</Link>
-                            <a href="#about-us" className="text-black hover:text-lime-500 transition">À Propos</a>
-                            <a href="#contact" className="text-black hover:text-lime-500 transition">Contact</a>
-                            <a href="/compte" className="text-black hover:text-lime-500 transition">Compte</a>
+                            <Link to="#about-us" className="text-black hover:text-lime-500 transition">À Propos</Link>
+                            <Link to="#contact" className="text-black hover:text-lime-500 transition">Contact</Link>
+                            <Link to="/compte" className="text-black hover:text-lime-500 transition">Compte</Link>
                             <Link to="/blog" className="text-black hover:text-lime-500 transition">Blog</Link>
                         </nav>
                         <a href="/partanariat" className="bg-lime-500 text-black px-4 py-2 rounded-full shadow hover:bg-lime-500 transition ">Faire un Partenariat</a>
